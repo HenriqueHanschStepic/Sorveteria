@@ -59,7 +59,7 @@ public class Checkout {
 	 */
 	public int impostoTotal() {
 		// TODO construir o código
-		return 0;
+		return (int) (Sorveteria.IMPOSTO/100*custoTotal());
 	}
 	
 	/**
