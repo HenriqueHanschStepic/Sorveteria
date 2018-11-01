@@ -2,11 +2,12 @@
 public class Sundae extends Sorvete {
 	
 	private int custoDaCalda;
-	public int calda;
+	public String calda;
 	
-	public Sundae(String nome, int custo, String calda, int custoDaCalda) {
+	public Sundae (String nome, int custo, String calda, int custoDaCalda) {
 		super(nome, custo);
 		this.custoDaCalda = custoDaCalda;
+		this.calda = calda
 		// TODO Auto-generated constructor stub
 	}
 
