@@ -1,4 +1,3 @@
-
 public class Sorveteria {
 	  public final static double IMPOSTO = 6.5;        // 6.5%
 	  public final static String NOME_LOJA = "Sorveteria M & M";
