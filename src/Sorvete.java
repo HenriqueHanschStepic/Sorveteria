@@ -7,7 +7,6 @@ public class Sorvete extends ItemSobremesa {
 		super(nome);
 		this.custo = custo;
 	}
-	
 	@Override
 	public int getCusto() {
 		// TODO Auto-generated method stub
