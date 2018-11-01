@@ -50,7 +50,11 @@ public class Checkout {
 	 */
 	public int custoTotal() {
 		// TODO construir o código
-		return 0;
+		int custo_total=0;
+		for(ItemSobremesa item : itens){
+			custo_total += item.getCusto();
+		}
+		return custo_total;
 	}
 	
 	/**
