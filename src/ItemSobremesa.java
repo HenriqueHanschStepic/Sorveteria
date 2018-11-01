@@ -10,7 +10,6 @@
 public abstract class ItemSobremesa {
   
   protected String nome;
-  
 /**
  * Construtor nulo para a classe ItemSobremesa
  */
