@@ -1,16 +1,15 @@
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-
 /**
  * GUI para a classe DessertItem 
  * @author Rodrigo Gregori
  * baseado no trabalho de Frederick Livingston, Mike Romeo
- * limitaÁ„o:
+ * limita√ß√£o:
  * Nome: Deve ser uma String
- * PreÁo: SÛ pode conter inteiros  (ex $1 -> 100)
+ * Pre√ßo: S√≥ pode conter inteiros  (ex $1 -> 100)
  * Peso: Deve ser um double
- * PreÁo/kg, PreÁo/dz, N˙mero: SÛ pode conter inteiros
+ * Pre√ßo/kg, Pre√ßo/dz, N√∫mero: S√≥ pode conter inteiros
  */
 public class CheckoutGUI extends JFrame implements ActionListener 
 {
@@ -21,14 +20,14 @@ public class CheckoutGUI extends JFrame implements ActionListener
 	
 	private Checkout checkout= new Checkout();
     private final static int INFO_SIZE = 30;
-    private JTextField _info = new JTextField("N˙mero de Õtens: 0",100);
+    private JTextField _info = new JTextField("N√∫mero de √çtens: 0",100);
 
     private String bnomes[]={ "Sorvete", "Doce", "Cookies", "Sundae"};
-//    private String lnomes[]={"NOme", "PreÁo", "Peso", "PreÁo/kg", "PreÁo/dz", "N˙mero"};
+//    private String lnomes[]={"NOme", "Pre√ßo", "Peso", "Pre√ßo/kg", "Pre√ßo/dz", "N√∫mero"};
     private String lnomes[] = 
 	{
-		"Nome", "PreÁo", "Peso", "PreÁo/g", "PreÁo/dz", "N˙mero", "Cobertura",
-		"PreÁo da Cobertura"
+		"Nome", "Pre√ßo", "Peso", "Pre√ßo/g", "Pre√ßo/dz", "N√∫mero", "Cobertura",
+		"Pre√ßo da Cobertura"
 	};
     private String bnomes2[]={"Entrar", "Total"};
     private String mnomes[]={"Limpar", "Sair"};
@@ -131,7 +130,7 @@ public class CheckoutGUI extends JFrame implements ActionListener
         if (source == menuitems[0])  //Limpar
 		{
             checkout.esvazia();
-            _info.setText("N˙mero de Õtens: 0");
+            _info.setText("N√∫mero de √çtens: 0");
             resetinfo();
             inablebuttonsAll();
             disableinfoAll();
@@ -143,31 +142,31 @@ public class CheckoutGUI extends JFrame implements ActionListener
         else if (source == buttons[0])  // Sorvete
 		{
             inableinfo(0); //nome
-            inableinfo(1); //preÁo
-            //inableinfo(5); //n˙mero
+            inableinfo(1); //pre√ßo
+            //inableinfo(5); //n√∫mero
             selecteditem=0;
         }
         else if (source == buttons[1])  //Doce
 		{
             inableinfo(0); //nome
-            inableinfo(3); //preÁo/g
+            inableinfo(3); //pre√ßo/g
             inableinfo(2); //peso
-            //inableinfo(5); //n˙mero
+            //inableinfo(5); //n√∫mero
             selecteditem=1;
         }
         else if (source == buttons[2])  //Cookie
 		{
             inableinfo(0); //nome
-            //inableinfo(1); //preÁo
-            inableinfo(4); //preÁo/dz
-            inableinfo(5); //n˙mero
+            //inableinfo(1); //pre√ßo
+            inableinfo(4); //pre√ßo/dz
+            inableinfo(5); //n√∫mero
             selecteditem=2;
         }
         else if (source == buttons[3])  //Sundae
 		{
             inableinfo(0); //nome
-            inableinfo(1); //preÁo
-            //inableinfo(4); //preÁo/dz
+            inableinfo(1); //pre√ßo
+            //inableinfo(4); //pre√ßo/dz
 //            inableinfo(5); //numero
 			inableinfo(6); // cobertura
 			inableinfo(7); // custo da cobertura
@@ -213,12 +212,12 @@ public class CheckoutGUI extends JFrame implements ActionListener
 						break;
                 } // end switch
 
-                _info.setText("N˙mero de Ìtens: "+checkout.numeroDeItens());
+                _info.setText("N√∫mero de √≠tens: "+checkout.numeroDeItens());
             } // end try
 
             catch (Exception ref) 
 			{
-                _info.setText("Entrada inv·lida, N˙mero de Õtens: "
+                _info.setText("Entrada inv√°lida, N√∫mero de √çtens: "
 					+ checkout.numeroDeItens()
 				);
             }
@@ -232,7 +231,7 @@ public class CheckoutGUI extends JFrame implements ActionListener
 		{
             ReceiptGUI r = new ReceiptGUI(checkout.toString());
             checkout.esvazia();
-            _info.setText("N˙mero de Õtens: 0");
+            _info.setText("N√∫mero de √çtens: 0");
             resetinfo();
             inablebuttonsAll();
             disableinfoAll();
