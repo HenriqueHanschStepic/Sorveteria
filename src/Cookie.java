@@ -7,8 +7,7 @@ public class Cookie extends ItemSobremesa {
 	public Cookie(String nome, int numero, int precoPorDuzia ) {
 		super (nome);
 		this.numero = numero;
-		this.precoPorDuzia = precoPorDuzia;
-		
+		this.precoPorDuzia = precoPorDuzia;	
 	}
 
 	@Override
