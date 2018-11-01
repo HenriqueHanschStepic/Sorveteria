@@ -9,7 +9,6 @@ public class Doce extends ItemSobremesa {
 			this.peso = peso;
 			this.precoPorQuilo = precoPorQuilo;
 		}
-	
 	@Override
 	public int getCusto() {
 		// TODO Auto-generated method stub
