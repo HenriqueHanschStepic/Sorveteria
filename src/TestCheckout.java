@@ -35,4 +35,5 @@ public class TestCheckout {
     System.out.println("\nCusto + Impostos: " + (checkout.custoTotal() + checkout.impostoTotal()) + "\n");
     System.out.println(checkout);
   }
+  
 }
